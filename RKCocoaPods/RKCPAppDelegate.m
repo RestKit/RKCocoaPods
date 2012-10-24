@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 RestKit. All rights reserved.
 //
 
+#import <RestKit/RestKit.h>
 #import "RKCPAppDelegate.h"
-
 #import "RKCPMasterViewController.h"
 
 @implementation RKCPAppDelegate
@@ -18,6 +18,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // Initialize RestKit
+    RKObjectManager *manager = [RKObjectManager managerWithBaseURL:[NSURL URLWithString:@"http://restkit.org"]];
+    RKManagedObjectStore *managedObjectStore = [[RKManagedObjectStore alloc] initWithManagedObjectModel:self.managedObjectModel];
+    manager.managedObjectStore = managedObjectStore;
+    
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     RKCPMasterViewController *controller = (RKCPMasterViewController *)navigationController.topViewController;

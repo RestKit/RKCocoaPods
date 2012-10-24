@@ -7,7 +7,6 @@
 //
 
 #import "RKCPMasterViewController.h"
-
 #import "RKCPDetailViewController.h"
 
 @interface RKCPMasterViewController ()
