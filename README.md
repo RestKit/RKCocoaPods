@@ -6,7 +6,6 @@ This is a simple application created via the Xcode "Master-Detail Application" t
 The steps taken to create and configure this project were:
 
 1. Create project with Master-Detail template
-1. Clone RestKit development branch via submodule: `
 1. Install CocoaPods: `gem install cocoapods`
 1. Create Podfile with the following contents:
 ```ruby
