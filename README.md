@@ -10,7 +10,7 @@ The steps taken to create and configure this project were:
 1. Create Podfile with the following contents:
 ```ruby
 platform :ios, '5.0'
-pod 'RestKit', :git => 'https://github.com/RestKit/RestKit.git', :branch => 'development'
+pod 'RestKit', '0.20.0pre3'
 ```
 1. Install via CocoaPods: `pod install`
 1. Close the project and reopen the workspace.
