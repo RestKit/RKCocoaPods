@@ -6,9 +6,9 @@ pod 'RestKit', '~> 0.20'
 # Installation via CocoaPods over Git
 #pod 'RestKit', :git => 'https://github.com/RestKit/RestKit.git', :branch => 'development'
 
-# Installation via CocoaPods in local directory
+# Installation via CocoaPods from a local path
 # Requires a copy of RestKit in the specified path
-# pod 'RestKit', :local => 'RestKit'
+# pod 'RestKit', :path => 'RestKit'
 
 # Installation into the OS X Target
 target 'RKCocoaPods OS X', :exclusive => true do
