@@ -8,9 +8,10 @@ The steps taken to create and configure this project were:
 1. Create project with Master-Detail template
 1. Install CocoaPods: `gem install cocoapods`
 1. Create Podfile with the following contents:
+
 ```ruby
 platform :ios, '5.0'
-pod 'RestKit', '0.20.0pre3'
+pod 'RestKit', '~> 0.20.0'
 ```
 1. Install via CocoaPods: `pod install`
 1. Close the project and reopen the workspace.
